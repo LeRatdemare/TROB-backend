@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const Thing = require("./models/thing");
 
 // Connect to the MongoDB database using Mongoose
+// Be careful, the password is not secure here, it's just for the tutorial
 mongoose
   .connect(
     "mongodb+srv://lufuluabon:dbAccessyo5@cluster0.aoa4rkn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
