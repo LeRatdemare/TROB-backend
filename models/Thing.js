@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // Create a Mongoose schema for the things in the database
 const thingSchema = mongoose.Schema({
@@ -10,4 +10,5 @@ const thingSchema = mongoose.Schema({
 });
 
 // Export the Mongoose model for the things
-module.exports = mongoose.model("Thing", thingSchema);
+const Thing = mongoose.model("Thing", thingSchema);
+export { Thing };
